@@ -8,7 +8,6 @@ public:
             rightMin[i] = min(nums[i], rightMin[i+1]);
         }
             int leftMax = INT_MIN;
-
             for (int i = 0; i < n ; i++){
                 leftMax = max(nums[i], leftMax);
             int instability = leftMax - rightMin[i]; 
